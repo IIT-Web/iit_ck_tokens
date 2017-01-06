@@ -6,5 +6,4 @@ package = Illinois Institute of Technology
 
 version = 7.x-1.0
 
-dependencies[] = pathauto
 files[] = iit_ck_tokens.module

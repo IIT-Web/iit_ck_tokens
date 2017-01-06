@@ -17,7 +17,7 @@ function iit_ck_tokens_token_info() {
 
   $info['tokens']['node']['faculty-type'] = array(
     'name' => t('Faculty Type'),
-    'description' => t('A replacement of adjunct is returned if adjunct is selected in faculty type field otherwise nothing.'),
+    'description' => t('A replacement of adjunct is returned if the faculty-type field contains Adjunct, otherwise nothing.'),
   );
 
   return $info;
