@@ -17,7 +17,7 @@ function iit_ck_tokens_token_info() {
 
   $info['tokens']['node']['faculty-type'] = array(
     'name' => t('Faculty Type'),
-    'description' => t('A replacement of adjunct is returned if the faculty-type field contains Adjunct, otherwise nothing.'),
+    'description' => t('A replacement of Adjunct is returned if the faculty-type field contains Adjunct, otherwise nothing.'),
   );
 
   return $info;
@@ -62,7 +62,7 @@ function iit_ck_tokens_tokens($type, $tokens, array $data = array(), array $opti
               $terms = taxonomy_term_load_multiple($termIds);
               foreach ($terms as $term) {
                 if (strtolower($term->name) == 'adjunct') {
-                  $replacements[$original] = 'adjunct';
+                  $replacements[$original] = 'Adjunct';
                 }
               }
             }
